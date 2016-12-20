@@ -1,0 +1,29 @@
+{
+  "name": "weaktuplemap",
+  "version": "1.0.0",
+  "description": "A WeakMap which accepts multiple objects as a key",
+  "main": "dist/index.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "lint": "eslint ./index.js ./__tests__",
+    "test": "jest test.js --coverage && npm run lint",
+    "clean": "rimraf dist/ && mkdir dist/",
+    "build": "npm test && npm run clean && babel index.js --out-file dist/index.js --source-maps"
+  },
+  "keywords": [
+    "cache",
+    "map",
+    "tuple"
+  ],
+  "author": "@louis_remi",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-jest": "^17.0.2",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "eslint": "^3.12.2",
+    "jest": "^17.0.3",
+    "rimraf": "^2.5.4"
+  }
+}
