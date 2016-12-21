@@ -6,7 +6,8 @@
   "jsnext:main": "index.js",
   "scripts": {
     "lint": "eslint ./index.js ./__tests__",
-    "test": "jest test.js --coverage && npm run lint",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "test": "jest --coverage && npm run lint",
     "clean": "rimraf dist/ && mkdir dist/",
     "build": "npm test && npm run clean && babel index.js --out-file dist/index.js --source-maps"
   },
@@ -20,6 +21,7 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-jest": "^17.0.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.18.0",
     "coveralls": "^2.11.15",
     "eslint": "^3.12.2",
