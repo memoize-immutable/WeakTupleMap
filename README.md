@@ -1,4 +1,4 @@
-WeakTupleMap
+WeakTupleMap [![npm version](https://badge.fury.io/js/weaktuplemap.svg)](https://badge.fury.io/js/weaktuplemap) [![Build Status](https://travis-ci.org/memoize-immutable/weaktuplemap.svg?branch=master)](https://travis-ci.org/memoize-immutable/weaktuplemap) [![Dependency Status](https://david-dm.org/memoize-immutable/weaktuplemap.svg)](https://david-dm.org/memoize-immutable/weaktuplemap) [![Coverage Status](https://coveralls.io/repos/github/memoize-immutable/weaktuplemap/badge.svg?branch=master)](https://coveralls.io/github/memoize-immutable/weaktuplemap?branch=master)
 ============
 
 A WeakMap which accepts multiple objects as a key.

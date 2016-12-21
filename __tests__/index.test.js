@@ -63,4 +63,10 @@ describe('WeakTupleMap', () => {
       expect(cache.get([arr, obj])).toBe(res);
     });
   });
+
+  describe('.toString', () => {
+    it('should return a special identifier', () => {
+      expect(cache.toString()).toEqual('[object WeakTupleMap]');
+    });
+  });
 });

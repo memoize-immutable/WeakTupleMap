@@ -3,6 +3,9 @@ function WeakTupleMap() {
 }
 
 WeakTupleMap.prototype = {
+  toString: function() {
+    return '[object WeakTupleMap]';
+  },
   has: function( tuple ) {
     let curr = this._cache;
     const l = tuple.length;
