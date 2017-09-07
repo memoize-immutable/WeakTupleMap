@@ -7,7 +7,7 @@ but it can suit other use-cases as it implements a usual Map API.
 
 ## Install
 
-`npm install --save WeakTupleMap`
+`npm install --save weaktuplemap`
 
 This lib has no dependency, but requires a native implementation of WeakMap.
 
